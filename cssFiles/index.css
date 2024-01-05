@@ -15,7 +15,7 @@ body{
     border-radius:25px;
 }
 .banner{
-    background-color: #26de81;
+    background-color: #0c2461;
     width:100%;
     padding:0.8rem;
     border-top-right-radius: 10px;
@@ -33,7 +33,7 @@ body{
     align-items: center;
     width:100%;
     padding:1rem;
-    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+    box-shadow: rgba(60, 67, 61, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
 }
 .logo a{
     text-decoration: none;
@@ -52,7 +52,7 @@ nav a{
     text-decoration: none;
 }
 nav a:hover{
-    color:#2ed573;
+    color:#474787;
 }
 .btns{
     display:flex;
@@ -63,14 +63,14 @@ nav a:hover{
 .btns button{
     padding:0.6rem 2.5rem;
     color:white;
-    background-color: #0be881;
-    border:1px solid #26de81;
+    background-color: #0c2461;
+    border:1px solid #0c2461;
     font-weight:900;
     font-size:1rem;
     border-radius: 6px;
 }
 .btns button:hover{
-    background-color: #2ed573;
+    background-color: #3B3B98;
     cursor:pointer;
 }
 .menu_bar{
@@ -93,5 +93,74 @@ nav a:hover{
     }
     .menu_bar img{
         width:70%;
+    }
+}
+.hero{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    gap:4rem;
+    padding:3rem;
+    width:100%;
+}
+.left_section{
+    width:46%;
+    display: flex;
+    flex-direction: column;
+    gap:3rem;
+    animation: slideFromLeft 2s ease 1;
+}
+@keyframes slideFromLeft {
+    0%{
+        transform: translateX(-100%);
+    }
+    100%{
+        transform: translateX(0%);
+    }
+}
+.left_section h1{
+    font-size:3.6rem;
+    color:#0c2461;
+    font-weight: 900;
+}
+.left_section p{
+    font-size:1.5rem;
+    color:#2c2c54;
+    word-spacing: 0.4rem;
+}
+.left_section button{
+    padding:1rem 3rem;
+    border:2px solid #0c2461;
+    border-radius:30px;
+    font-size:1.2rem;
+    font-weight:600;
+    cursor: pointer;
+    background-color: #0c2461;
+    color:white;
+}
+.right_section{
+    height:370px;
+}
+.right_section img{
+    height:100%;
+    width:100%;
+    border-top-left-radius: 60px;
+    border-bottom-right-radius: 60px;
+}
+@media (max-width:425px){
+    .hero{
+        flex-direction: column;
+    }
+    .left_section{
+        width:100%;
+    }
+    .left_section h1{
+        font-size:2rem;
+    }
+    .left_section p{
+        font-size:1.3rem
+    }
+    .right_section img{
+        height:300px;
     }
 }
