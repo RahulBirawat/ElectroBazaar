@@ -23,4 +23,7 @@ menu_btn.addEventListener("click",()=>{
     nav_btns.style.justifyContent = "center";
     nav_btns.style.alignItems = "center";
     nav_btns.style.flexDirection = "column";
+    nav_bar.style.position = "fixed";
+    nav_bar.style.top = "0";
+    nav_bar.style.left = "0";
 });
