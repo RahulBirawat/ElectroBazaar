@@ -73,8 +73,17 @@ nav a:hover{
     background-color: #3B3B98;
     cursor:pointer;
 }
-.menu_bar{
+.menu_bar , .close_icon{
     display: none;
+}
+.close_icon{
+    width:20%;
+    position:fixed;
+    top:0;
+    right:0;
+}
+.close_icon img{
+    width:70%;
 }
 @media (max-width:425px){
     .nav_bar{
